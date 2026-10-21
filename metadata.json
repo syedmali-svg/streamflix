@@ -1,0 +1,6 @@
+{
+  "name": "Streamflix",
+  "description": "Streamflix is an immersive cinematic video streaming and shorts platform featuring 4K HDR playback, creator subscriptions, and interactive discovery.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

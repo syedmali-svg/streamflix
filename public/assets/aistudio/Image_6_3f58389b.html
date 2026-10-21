@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#1c1b1b", "surface-overlay": "#282828", "primary-fixed-dim": "#ffb4a8", "on-tertiary": "#002f67", "on-error-container": "#ffdad6", "on-surface-variant": "#ebbbb4", "tertiary-container": "#488fff", "secondary-container": "#005dd2", "on-secondary-fixed": "#001944", "error-container": "#93000a", "on-secondary-fixed-variant": "#004299", "secondary-fixed": "#d9e2ff", "on-background": "#e5e2e1", "surface-container-lowest": "#0e0e0e", "on-primary-fixed": "#410000", "on-primary-container": "#5c0000", "on-tertiary-fixed": "#001a40", "surface-tint": "#ffb4a8", "surface-bright": "#3a3939", "inverse-primary": "#c00100", "primary-container": "#ff5540", "secondary": "#afc6ff", "live-badge-red": "#CC0000", "on-secondary": "#002d6d", "surface-variant": "#353534", "text-primary": "#F1F1F1", "tertiary-fixed": "#d7e2ff", "surface-dim": "#131313", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#004491", "tertiary": "#acc7ff", "inverse-surface": "#e5e2e1", "primary-fixed": "#ffdad4", "surface": "#131313", "on-primary": "#690100", "on-surface": "#e5e2e1", "outline-variant": "#603e39", "on-error": "#690005", "tertiary-fixed-dim": "#acc7ff", "outline": "#b18780", "text-secondary": "#AAAAAA", "on-primary-fixed-variant": "#930100", "surface-elevated": "#212121", "surface-container-highest": "#353534", "secondary-fixed-dim": "#afc6ff", "inverse-on-surface": "#313030", "on-secondary-container": "#d6e0ff", "surface-container": "#201f1f", "border-subtle": "rgba(255, 255, 255, 0.1)", "surface-container-high": "#2a2a2a", "on-tertiary-container": "#00285b", "primary": "#ffb4a8", "background": "#131313" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "margin": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem" }, fontFamily: { "label-md": ["Roboto Flex"], "badge-xs": ["Roboto Flex"], "display-hero": ["Roboto Flex"], "title-sm": ["Roboto Flex"], "body-md": ["Roboto Flex"], "display-hero-mobile": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "body-sm": ["Roboto Flex"] }, fontSize: { "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "500" }], "badge-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#131313;color:#e5e2e1;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-14 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><button aria-label="Go back" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Streamflix Brand Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WV5N8y_JwIBu83-3-nLGDQ6FnBiWnQYplDTRzcx_kInPTe0h8ED2junfhvzJcAgZ9g9Z3fjapXmSVi8-ipMpWMY6bDeuRSCrxyDgy312W80SMw_lKDJfHG5PcQIyjBNRkAdJ6l6OUiUbiXsvaSwXmHBRU4uEfZAiAERKHUxzgZ238fKz0H_V6xQRivjBNgswc21ZZbD1icNLMKjlPOKJsPVcN9Yz2imt7RqNlwZ7JilV14IrdBBFn9F6nh"/><h1 class="font-title-sm text-title-sm text-text-primary truncate max-w-[160px] ml-space-xs">Watch Player</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Cast to device" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">cast</span></button><button aria-label="Search" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">search</span></button><button aria-label="More options" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">more_vert</span></button><div class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj8PTnEF6VClpqnVcy3XixTRuMxf9X0oZNhzP1uZjcXuX4ZArzOPBjVWKGOezK6bl25gkNhOm1pJmOaoRaizkLesC_V93oFKr_wT_E4VH_ZTvTfDGZfyhTRI9Id6ut6o7f0XD-sxk6bYYN-TNpnMwk2hURDfcOc4t_nQTUP-qttOy385IIJ_Qgd1qmgdmKhIC29cQFS16THTSrIhzHtVsD5GDpoY4l1_EnNoYEV-uDlyhOuUJBAk_Kjg"/></div></div></div></header><main class="flex-1 w-full pt-14 pb-safe bg-surface flex flex-col"><div class="flex flex-col w-full pb-8">
+<!-- Interactive Cinematic Player Canvas (16:9) -->
+<section class="relative w-full aspect-video bg-surface-container-lowest overflow-hidden select-none group" id="player-container">
+<div class="w-full h-full bg-cover bg-center transition-transform duration-500 scale-100" data-alt="A breathtaking widescreen cinematic sci-fi movie scene featuring a lone humanoid synthetic observer gazing into a colossal quantum hyper-drive singularity. Bioluminescent deep crimson and electric cyan plasma ribbons arc across an interstellar void with deep cosmic blackness, volumetric haze, futuristic anamorphic lens flare, and ultra-high-definition film still aesthetics." id="video-canvas" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCV2hbEWGFbXT0yNIsC7-SvLm2zljPrHz-M81_NuiekCdOh5dxZDvacuGqKuFaC3mNhEV6vtU6MIyhhykRJO7rVodyoiurqSkkW1PnnsGyZIQR-o7nsBZ95G1eIBLilqseUHHsFN_xwrWc9k0EHMAJ2vK2uZUuecOIaUgcmbaBL1SFq_F_5JdsU3IKtAZiQk92IEz0DlAy3JE3M0Rx0AvlLEOwvOTqA4qhYsv50LtWqeTxN36TBczvJBA')"></div>
+<!-- Vignette Scrim & Controls Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/90 via-surface-container-lowest/20 to-surface-container-lowest/70 pointer-events-none transition-opacity duration-300" id="controls-scrim"></div>
+<!-- Quick Floating Toast / HUD info -->
+<div class="absolute top-4 left-1/2 -translate-x-1/2 px-space-md py-1 rounded-full bg-surface-container-high/90 backdrop-blur-md opacity-0 pointer-events-none transition-all duration-300 shadow-md" id="player-hud-toast">
+<span class="font-label-sm text-label-sm text-text-primary tracking-wide" id="hud-message">1080p60 HDR</span>
+</div>
+<!-- Center Play/Pause & Scrub Ripples -->
+<div class="absolute inset-0 flex items-center justify-center gap-space-xl pointer-events-none">
+<button aria-label="Rewind 10 seconds" class="pointer-events-auto w-10 h-10 rounded-full bg-surface-dim/40 backdrop-blur-sm flex items-center justify-center text-text-primary active:scale-90 transition-transform active:bg-surface-dim/70" id="btn-rewind">
+<span class="material-symbols-outlined text-[20px]">replay_10</span>
+</button>
+<button aria-label="Play or Pause" class="pointer-events-auto w-14 h-14 rounded-full bg-surface-container-high/80 backdrop-blur-md text-text-primary flex items-center justify-center shadow-xl active:scale-95 transition-all" id="btn-play-pause">
+<span class="material-symbols-outlined text-[32px]" id="play-pause-icon" style="font-variation-settings: 'FILL' 1;">pause</span>
+</button>
+<button aria-label="Forward 10 seconds" class="pointer-events-auto w-10 h-10 rounded-full bg-surface-dim/40 backdrop-blur-sm flex items-center justify-center text-text-primary active:scale-90 transition-transform active:bg-surface-dim/70" id="btn-forward">
+<span class="material-symbols-outlined text-[20px]">forward_10</span>
+</button>
+</div>
+<!-- Top Overlay Controls Bar -->
+<div class="absolute top-0 left-0 right-0 p-gutter-mobile flex items-center justify-between pointer-events-auto">
+<div class="flex items-center gap-space-sm">
+<span class="px-2 py-0.5 rounded bg-primary-container text-on-primary-container font-badge-xs text-badge-xs tracking-wider uppercase">4K HDR</span>
+<span class="font-label-sm text-label-sm text-text-secondary truncate max-w-[140px]">Streamflix Original</span>
+</div>
+<div class="flex items-center gap-space-xs">
+<button aria-label="Toggle Subtitles" class="h-8 px-2 rounded-full bg-surface-overlay/80 text-text-primary flex items-center justify-center active:scale-90 transition-all" id="btn-cc">
+<span class="font-badge-xs text-badge-xs tracking-wider text-text-primary" id="cc-indicator">CC</span>
+</button>
+<button aria-label="Player Settings" class="w-8 h-8 rounded-full bg-surface-overlay/80 text-text-primary flex items-center justify-center active:scale-90 transition-all" id="btn-settings">
+<span class="material-symbols-outlined text-[18px]">settings</span>
+</button>
+<button aria-label="Toggle Fullscreen" class="w-8 h-8 rounded-full bg-surface-overlay/80 text-text-primary flex items-center justify-center active:scale-90 transition-all" id="btn-fullscreen">
+<span class="material-symbols-outlined text-[18px]">fullscreen</span>
+</button>
+</div>
+</div>
+<!-- Bottom Scrubber & Time Indicator -->
+<div class="absolute bottom-0 inset-x-0 px-gutter-mobile pb-2 pt-4 pointer-events-auto flex flex-col gap-1.5">
+<!-- Scrub Bar -->
+<div class="relative w-full h-2.5 flex items-center cursor-pointer group/bar" id="progress-container">
+<!-- Background Track -->
+<div class="w-full h-1 bg-surface-variant/60 rounded-full overflow-hidden relative">
+<!-- Buffered Track (48%) -->
+<div class="absolute left-0 top-0 bottom-0 bg-surface-bright rounded-full w-[48%]"></div>
+<!-- Played Track (24.2%) -->
+<div class="absolute left-0 top-0 bottom-0 bg-primary-container rounded-full w-[24.2%] transition-all duration-150" id="progress-fill"></div>
+</div>
+<!-- Scrubber Scrubber Thumb -->
+<div class="absolute left-[24.2%] -translate-x-1/2 w-3.5 h-3.5 rounded-full bg-primary-container shadow-md scale-100 group-hover/bar:scale-125 transition-transform" id="progress-thumb"></div>
+</div>
+<!-- Time Stamp Status -->
+<div class="flex items-center justify-between text-text-secondary font-label-sm text-label-sm px-0.5">
+<div class="flex items-center gap-1.5">
+<span class="w-1.5 h-1.5 rounded-full bg-primary-container animate-pulse"></span>
+<span class="text-text-primary" id="current-timestamp">04:32</span>
+<span>/</span>
+<span>18:45</span>
+</div>
+<div class="flex items-center gap-space-xs text-text-secondary">
+<span class="material-symbols-outlined text-[14px]">speed</span>
+<span class="font-badge-xs text-badge-xs text-text-primary">1.0x</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Video Meta & Details Area -->
+<div class="px-margin-mobile flex flex-col pt-space-md">
+<!-- Title -->
+<h1 class="font-headline-md text-headline-md text-text-primary leading-tight">
+      The Future of AI &amp; Human Creativity in 2025: Full Documentary
+    </h1>
+<!-- Collapsible Context Strip -->
+<div class="mt-space-xs p-space-sm rounded-lg bg-surface-container transition-all cursor-pointer" id="description-box">
+<div class="flex items-baseline justify-between">
+<p class="font-label-sm text-label-sm text-text-secondary flex flex-wrap gap-x-1.5">
+<span class="text-text-primary font-medium">1,428,910 views</span>
+<span>•</span>
+<span>Streamed live 2 days ago</span>
+<span class="text-secondary font-medium">#AI #Technology #Documentary</span>
+</p>
+<button aria-label="Toggle video description" class="text-text-secondary" id="desc-toggle-btn">
+<span class="material-symbols-outlined text-[18px]" id="desc-chevron">expand_more</span>
+</button>
+</div>
+<div class="hidden mt-space-sm pt-space-xs text-text-secondary font-body-sm text-body-sm leading-relaxed" id="description-expanded">
+<p>In this high-production Streamflix Special, we investigate how autonomous generative models, neural video tools, and human intuition are reshaping cinema, architecture, and music synthesis. Featuring uncensored interviews with pioneering research labs across Silicon Valley and Tokyo.</p>
+<div class="mt-2 flex gap-2">
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-text-primary font-badge-xs text-badge-xs">Closed Captions (CC)</span>
+<span class="px-2 py-0.5 rounded bg-surface-container-high text-text-primary font-badge-xs text-badge-xs">Spatial Audio</span>
+</div>
+</div>
+</div>
+<!-- Creator Bar -->
+<div class="mt-space-md flex items-center justify-between gap-space-sm">
+<div class="flex items-center gap-space-sm min-w-0">
+<div class="relative shrink-0">
+<div class="w-10 h-10 rounded-full bg-cover bg-center ring-0" data-alt="Futuristic holographic studio avatar profile icon featuring an abstract glowing quantum orb with neon crimson and electric cobalt chromatic flares against deep space charcoal." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoKnxJIeiiygfzbE2_gFM1GjQNgUMP2LRO4BWTKByuenRxhoU_JFgWD9UNphenizvbGVaxUgrfTmRhA_jOATRxDJV6IpVwrwCStfqdMATA0tgPxeonnUSIuucVx12TaKIEZeTa0DCt1oB1tMPusLeMDm50TmWpMEklsM78oFftzkBnYZToA3yKN0HK-_Vx0oaUtttESLe0LQ_vDdNLEoqHQJZRyzYzqiiuVA3CVoldtNPz1CI3pOdzJQ')"></div>
+<span class="absolute -bottom-0.5 -right-0.5 w-3.5 h-3.5 bg-surface-container-lowest rounded-full flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px] text-tertiary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1">
+<span class="font-title-sm text-title-sm text-text-primary truncate">TechSphere Media</span>
+</div>
+<span class="font-body-sm text-body-sm text-text-secondary">3.42M subscribers</span>
+</div>
+</div>
+<!-- Creator Actions -->
+<div class="flex items-center gap-space-xs shrink-0">
+<button class="px-3.5 py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md active:bg-surface-variant transition-colors" id="join-btn">
+          Join
+        </button>
+<button class="px-4 py-1.5 rounded-full bg-text-primary text-surface-container-lowest font-label-md text-label-md shadow-md active:scale-95 transition-transform flex items-center gap-1" id="subscribe-btn">
+<span id="sub-label">Subscribe</span>
+<span class="material-symbols-outlined text-[16px] hidden" id="sub-bell">notifications_active</span>
+</button>
+</div>
+</div>
+<!-- Horizontal Action Ribbon Carousel -->
+<div class="mt-space-md -mx-margin-mobile px-margin-mobile flex items-center gap-space-xs overflow-x-auto no-scrollbar py-1">
+<!-- Like / Dislike Split Capsule -->
+<div class="flex items-center rounded-full bg-surface-container shrink-0 overflow-hidden">
+<button class="flex items-center gap-1.5 px-3.5 py-2 text-text-primary font-label-md text-label-md active:bg-surface-variant transition-colors" id="like-btn">
+<span class="material-symbols-outlined text-[18px]" id="like-icon">thumb_up</span>
+<span id="like-count">142K</span>
+</button>
+<div class="w-[1px] h-4 bg-surface-bright"></div>
+<button aria-label="Dislike" class="px-3 py-2 text-text-primary active:bg-surface-variant transition-colors" id="dislike-btn">
+<span class="material-symbols-outlined text-[18px]" id="dislike-icon">thumb_down</span>
+</button>
+</div>
+<!-- Share Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-text-primary font-label-md text-label-md shrink-0 active:bg-surface-variant transition-colors" id="share-btn">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Share</span>
+</button>
+<!-- Remix / Shorts Capsule -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-text-primary font-label-md text-label-md shrink-0 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">auto_fix_high</span>
+<span>Remix</span>
+</button>
+<!-- Download Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-text-primary font-label-md text-label-md shrink-0 active:bg-surface-variant transition-colors" id="download-btn">
+<span class="material-symbols-outlined text-[18px]" id="download-icon">download</span>
+<span id="download-label">Download</span>
+</button>
+<!-- Clip Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-text-primary font-label-md text-label-md shrink-0 active:bg-surface-variant transition-colors">
+<span class="material-symbols-outlined text-[18px]">content_cut</span>
+<span>Clip</span>
+</button>
+<!-- Save to Playlist Button -->
+<button class="flex items-center gap-1.5 px-3.5 py-2 rounded-full bg-surface-container text-text-primary font-label-md text-label-md shrink-0 active:bg-surface-variant transition-colors" id="save-btn">
+<span class="material-symbols-outlined text-[18px]" id="save-icon">bookmark_add</span>
+<span>Save</span>
+</button>
+</div>
+<!-- Pinned Top Comments Preview Card -->
+<div class="mt-space-md p-space-sm rounded-xl bg-surface-container cursor-pointer active:bg-surface-variant/80 transition-colors" id="comments-preview-card">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="font-title-sm text-title-sm text-text-primary">Comments</span>
+<span class="font-label-sm text-label-sm text-text-secondary">8.4K</span>
+</div>
+<span class="material-symbols-outlined text-[18px] text-text-secondary">unfold_more</span>
+</div>
+<!-- Excerpt -->
+<div class="flex items-start gap-space-sm">
+<div class="w-7 h-7 rounded-full bg-cover bg-center shrink-0" data-alt="Modern close-up lifestyle portrait of a creative technologist with sleek neon spectacles reflecting soft ambient studio monitors, cinematic bokeh in deep violet and charcoal tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCoFxhV2RrrWP5bgt2OlYKpw743QYVN4BxsA8kkZXE6WexZsWTaj2lyZe9WEtJpLBiXCEEq3Y3M8wLkm6XSgopSrQ0kQLHvagcApVOTyL52hYJ5J5ujuGrCKY_M2YVpMjZ7rV2AExsvWFLduiHqLFQEdek0hlvHi76vMlORTQ2Vm0m0LgdO6-2YddYCp6UxhNFdRhY9a500BxguV0Osb2fqt4KoGwOeid_0k0zTinIPQ5gD0K9rTtN-QQ')"></div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-1.5">
+<span class="font-label-sm text-label-sm text-text-secondary truncate">@alex_matrix</span>
+<span class="px-1.5 py-0.2 rounded bg-surface-container-high text-primary font-badge-xs text-badge-xs">Pinned</span>
+</div>
+<p class="font-body-sm text-body-sm text-text-primary line-clamp-2 mt-0.5">
+            The cinematography at 12:40 is mind-blowing! Best tech doc this year.
+          </p>
+<div class="flex items-center gap-3 mt-1.5 text-text-secondary font-label-sm text-label-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">thumb_up</span>
+<span>1.8K</span>
+</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[14px]">chat_bubble</span>
+<span>42</span>
+</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Up Next / Related Content List -->
+<div class="mt-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h2 class="font-title-sm text-title-sm text-text-primary">Up Next</h2>
+<!-- Autoplay Pill Toggle -->
+<div class="flex items-center gap-1.5 text-text-secondary font-label-sm text-label-sm">
+<span>Autoplay</span>
+<button aria-label="Toggle autoplay" class="w-8 h-4 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors" id="autoplay-toggle">
+<span class="w-3 h-3 rounded-full bg-on-primary-container shadow"></span>
+</button>
+</div>
+</div>
+<!-- Recommendation Card 1 -->
+<div class="flex gap-space-sm items-start cursor-pointer group active:opacity-80 transition-opacity">
+<div class="relative w-40 aspect-video rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Photorealistic futuristic generative video rendering laboratory showing volumetric deep learning neural matrices glowing with vivid magenta and neon cyan sparks, ultra high definition widescreen frame." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCtuAek9V1hdUfQ3YwwosuQxKMg2UrcISFJBX2TXFwJ1RGUMKbGeXUbqdAPo8bbwRbwe7r14xyPTykKJf_aZ8Y7cxwhEqTUJql4WBf3xa2CDqbiOF-qQOc37hHpz0ySXuj6ilR4Im4WVyicBLk8et_Y6yoMNw6aF0PPV4mO9bxdRcTBYmJLa8knLXnJ2-bMAiuzpjE_wqWdlUhSGD5siYj3fFbkdUrHPRl_slYE-8TuC-m6ioi7dn0V-g')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/90 font-badge-xs text-badge-xs text-text-primary">14:12</span>
+<!-- Watched progress indicator bar -->
+<div class="absolute bottom-0 left-0 right-0 h-0.5 bg-surface-variant">
+<div class="w-2/3 h-full bg-primary-container"></div>
+</div>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-title-sm text-title-sm text-text-primary line-clamp-2 leading-snug">
+            How OpenAI Built Sora: Architecture Breakdown
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 truncate">TechSphere Media</p>
+<p class="font-label-sm text-label-sm text-text-secondary">520K views • 4 days ago</p>
+</div>
+<button aria-label="More options for video" class="text-text-secondary p-1 rounded-full hover:text-text-primary">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Recommendation Card 2 -->
+<div class="flex gap-space-sm items-start cursor-pointer group active:opacity-80 transition-opacity">
+<div class="relative w-40 aspect-video rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Futuristic clean architectural metropolis with sleek mag-lev transit tubes, ambient quantum gardens, solar glass towers at sunset with cinematic warm amber and slate tones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDM9p5Cf4aDZsz73QwCsPKuaPhtxuzwlCg8gJiH7uStzWjoEtO9G6jzc0EUo3m0Qp3ZMkXaZkpZ_NXrVTLi4hb31sPfkgbD6-VXVQm7-YKpya-n3A9CQf-Nu0UKIxl0vB0qmTnethnc0JDC3XebxMDGEM5OqL5MmIdqVSKMYR59wZhOW0EiVXjLojq5SnXNdbSDcQ0QdHCnql0RJYWDaA4NYWopBYdyrF-vDCcSUhJro0d6alxd_d2w4A')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/90 font-badge-xs text-badge-xs text-text-primary">22:04</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-title-sm text-title-sm text-text-primary line-clamp-2 leading-snug">
+            10 Inventions That Will Change The Next Decade
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 truncate">Future Vision</p>
+<p class="font-label-sm text-label-sm text-text-secondary">2.1M views • 1 month ago</p>
+</div>
+<button aria-label="More options for video" class="text-text-secondary p-1 rounded-full hover:text-text-primary">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Recommendation Card 3 -->
+<div class="flex gap-space-sm items-start cursor-pointer group active:opacity-80 transition-opacity">
+<div class="relative w-40 aspect-video rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<div class="w-full h-full bg-cover bg-center group-hover:scale-105 transition-transform duration-300" data-alt="Atmospheric wet rainy night street photography in Shinjuku Tokyo illuminated by neon kanji signs, holographic ads reflecting on wet asphalt with vivid crimson and cyan saturation." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAjIGei6IpQKavU0xJe8naietIG8beGrgOOaYhkNU1-1HF-j0fdkJ_6H_q5UOha1ygtiMCBClYxQkKMrpnFn7zwKhX6khXr4fwnzcD5bxEB-W_SyyN6uSI-C7hiE00KEzCzUPDFovCI8hKoqmGIt_WbbOfOUba5CZL0dIT9COg9NZVyn8FnUOzdqE5MLF64F-eTo7AR9NPYkv71MpSduwD-urLMNsy-GhpWomxjx1gf-FHtrmruloVxPQ')"></div>
+<span class="absolute bottom-1 right-1 px-1.5 py-0.5 rounded bg-surface-dim/90 font-badge-xs text-badge-xs text-text-primary">48:30</span>
+</div>
+<div class="flex flex-col min-w-0 flex-1">
+<h3 class="font-title-sm text-title-sm text-text-primary line-clamp-2 leading-snug">
+            Cyberpunk 2077 in Real Life: Tokyo Night Walk
+          </h3>
+<p class="font-body-sm text-body-sm text-text-secondary mt-1 truncate">Urban Wanderer</p>
+<p class="font-label-sm text-label-sm text-text-secondary">850K views • 1 week ago</p>
+</div>
+<button aria-label="More options for video" class="text-text-secondary p-1 rounded-full hover:text-text-primary">
+<span class="material-symbols-outlined text-[18px]">more_vert</span>
+</button>
+</div>
+<!-- Streamflix Originals Banner Teaser -->
+<div class="mt-space-xs p-space-md rounded-xl bg-gradient-to-r from-surface-container-high via-surface-container to-surface-container-low flex items-center justify-between shadow-sm">
+<div class="flex flex-col">
+<span class="font-badge-xs text-badge-xs text-primary tracking-widest uppercase">Streamflix Premium</span>
+<span class="font-title-sm text-title-sm text-text-primary mt-0.5">Stream uninterrupted in 4K HDR</span>
+<span class="font-body-sm text-body-sm text-text-secondary">Background play &amp; offline downloads included</span>
+</div>
+<button class="px-3.5 py-2 rounded-full bg-primary-container text-on-primary-container font-label-md text-label-md shrink-0 active:scale-95 transition-transform">
+          Try Free
+        </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+  (function initPlayerDelight() {
+    // Player State Micro-Interactions
+    let isPlaying = true;
+    let isLiked = false;
+    let isSubscribed = false;
+    let isSaved = false;
+    let isAutoplay = true;
+    let ccActive = true;
+
+    const playPauseBtn = document.getElementById('btn-play-pause');
+    const playPauseIcon = document.getElementById('play-pause-icon');
+    const hudToast = document.getElementById('player-hud-toast');
+    const hudMessage = document.getElementById('hud-message');
+    const videoCanvas = document.getElementById('video-canvas');
+
+    function triggerHud(msg) {
+      if (!hudToast || !hudMessage) return;
+      hudMessage.textContent = msg;
+      hudToast.classList.remove('opacity-0', '-translate-y-2');
+      hudToast.classList.add('opacity-100', 'translate-y-0');
+      clearTimeout(window.__hudTimeout);
+      window.__hudTimeout = setTimeout(() => {
+        hudToast.classList.add('opacity-0');
+        hudToast.classList.remove('opacity-100');
+      }, 1400);
+    }
+
+    if (playPauseBtn && playPauseIcon) {
+      playPauseBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        isPlaying = !isPlaying;
+        playPauseIcon.textContent = isPlaying ? 'pause' : 'play_arrow';
+        triggerHud(isPlaying ? 'Playing' : 'Paused');
+      });
+    }
+
+    // Rewind / Forward Micro-actions
+    const rewindBtn = document.getElementById('btn-rewind');
+    const forwardBtn = document.getElementById('btn-forward');
+
+    if (rewindBtn) {
+      rewindBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerHud('-10 seconds');
+      });
+    }
+    if (forwardBtn) {
+      forwardBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        triggerHud('+10 seconds');
+      });
+    }
+
+    // CC Toggle
+    const ccBtn = document.getElementById('btn-cc');
+    const ccInd = document.getElementById('cc-indicator');
+    if (ccBtn && ccInd) {
+      ccBtn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        ccActive = !ccActive;
+        if (ccActive) {
+          ccBtn.classList.remove('opacity-50');
+          triggerHud('English Subtitles On');
+        } else {
+          ccBtn.classList.add('opacity-50');
+          triggerHud('Subtitles Off');
+        }
+      });
+    }
+
+    // Description Expand/Collapse
+    const descBox = document.getElementById('description-box');
+    const descContent = document.getElementById('description-expanded');
+    const descChevron = document.getElementById('desc-chevron');
+    if (descBox && descContent && descChevron) {
+      descBox.addEventListener('click', () => {
+        const isHidden = descContent.classList.contains('hidden');
+        if (isHidden) {
+          descContent.classList.remove('hidden');
+          descChevron.textContent = 'expand_less';
+        } else {
+          descContent.classList.add('hidden');
+          descChevron.textContent = 'expand_more';
+        }
+      });
+    }
+
+    // Like Toggle with tactile feedback
+    const likeBtn = document.getElementById('like-btn');
+    const likeIcon = document.getElementById('like-icon');
+    const likeCount = document.getElementById('like-count');
+    if (likeBtn && likeIcon && likeCount) {
+      likeBtn.addEventListener('click', () => {
+        isLiked = !isLiked;
+        if (isLiked) {
+          likeIcon.style.fontVariationSettings = "'FILL' 1";
+          likeIcon.classList.add('text-primary-container');
+          likeCount.textContent = '143K';
+        } else {
+          likeIcon.style.fontVariationSettings = "'FILL' 0";
+          likeIcon.classList.remove('text-primary-container');
+          likeCount.textContent = '142K';
+        }
+      });
+    }
+
+    // Subscribe Toggle
+    const subBtn = document.getElementById('subscribe-btn');
+    const subLabel = document.getElementById('sub-label');
+    const subBell = document.getElementById('sub-bell');
+    if (subBtn && subLabel && subBell) {
+      subBtn.addEventListener('click', () => {
+        isSubscribed = !isSubscribed;
+        if (isSubscribed) {
+          subBtn.classList.remove('bg-text-primary', 'text-surface-container-lowest');
+          subBtn.classList.add('bg-surface-container-high', 'text-text-primary');
+          subLabel.textContent = 'Subscribed';
+          subBell.classList.remove('hidden');
+        } else {
+          subBtn.classList.add('bg-text-primary', 'text-surface-container-lowest');
+          subBtn.classList.remove('bg-surface-container-high', 'text-text-primary');
+          subLabel.textContent = 'Subscribe';
+          subBell.classList.add('hidden');
+        }
+      });
+    }
+
+    // Save Toggle
+    const saveBtn = document.getElementById('save-btn');
+    const saveIcon = document.getElementById('save-icon');
+    if (saveBtn && saveIcon) {
+      saveBtn.addEventListener('click', () => {
+        isSaved = !isSaved;
+        if (isSaved) {
+          saveIcon.textContent = 'bookmark_added';
+          saveIcon.style.fontVariationSettings = "'FILL' 1";
+          saveBtn.classList.add('text-primary');
+        } else {
+          saveIcon.textContent = 'bookmark_add';
+          saveIcon.style.fontVariationSettings = "'FILL' 0";
+          saveBtn.classList.remove('text-primary');
+        }
+      });
+    }
+
+    // Download Micro-action
+    const downloadBtn = document.getElementById('download-btn');
+    const downloadIcon = document.getElementById('download-icon');
+    const downloadLabel = document.getElementById('download-label');
+    if (downloadBtn && downloadIcon && downloadLabel) {
+      downloadBtn.addEventListener('click', () => {
+        downloadIcon.textContent = 'download_done';
+        downloadLabel.textContent = 'Downloaded';
+        downloadBtn.classList.add('text-tertiary');
+      });
+    }
+
+    // Autoplay switch
+    const autoplayToggle = document.getElementById('autoplay-toggle');
+    if (autoplayToggle) {
+      autoplayToggle.addEventListener('click', () => {
+        isAutoplay = !isAutoplay;
+        if (isAutoplay) {
+          autoplayToggle.className = 'w-8 h-4 rounded-full bg-primary-container p-0.5 flex items-center justify-end transition-colors';
+        } else {
+          autoplayToggle.className = 'w-8 h-4 rounded-full bg-surface-variant p-0.5 flex items-center justify-start transition-colors';
+        }
+      });
+    }
+
+    // Interactive scrubber seek bar simulation
+    const progContainer = document.getElementById('progress-container');
+    const progFill = document.getElementById('progress-fill');
+    const progThumb = document.getElementById('progress-thumb');
+    const timeDisplay = document.getElementById('current-timestamp');
+
+    if (progContainer && progFill && progThumb) {
+      progContainer.addEventListener('click', (e) => {
+        const rect = progContainer.getBoundingClientRect();
+        const clickX = Math.max(0, Math.min(e.clientX - rect.left, rect.width));
+        const pct = (clickX / rect.width) * 100;
+        progFill.style.width = pct + '%';
+        progThumb.style.left = pct + '%';
+
+        // Calculate time based on 18:45 total (1125 seconds)
+        const totalSecs = 1125;
+        const currentSecs = Math.floor((pct / 100) * totalSecs);
+        const mins = String(Math.floor(currentSecs / 60)).padStart(2, '0');
+        const secs = String(currentSecs % 60).padStart(2, '0');
+        if (timeDisplay) {
+          timeDisplay.textContent = `${mins}:${secs}`;
+        }
+      });
+    }
+  })();
+</script></main></body></html>

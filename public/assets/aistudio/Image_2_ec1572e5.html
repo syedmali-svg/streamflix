@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_tab" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "surface-container-low": "#1c1b1b", "surface-overlay": "#282828", "primary-fixed-dim": "#ffb4a8", "on-tertiary": "#002f67", "on-error-container": "#ffdad6", "on-surface-variant": "#ebbbb4", "tertiary-container": "#488fff", "secondary-container": "#005dd2", "on-secondary-fixed": "#001944", "error-container": "#93000a", "on-secondary-fixed-variant": "#004299", "secondary-fixed": "#d9e2ff", "on-background": "#e5e2e1", "surface-container-lowest": "#0e0e0e", "on-primary-fixed": "#410000", "on-primary-container": "#5c0000", "on-tertiary-fixed": "#001a40", "surface-tint": "#ffb4a8", "surface-bright": "#3a3939", "inverse-primary": "#c00100", "primary-container": "#ff5540", "secondary": "#afc6ff", "live-badge-red": "#CC0000", "on-secondary": "#002d6d", "surface-variant": "#353534", "text-primary": "#F1F1F1", "tertiary-fixed": "#d7e2ff", "surface-dim": "#131313", "error": "#ffb4ab", "on-tertiary-fixed-variant": "#004491", "tertiary": "#acc7ff", "inverse-surface": "#e5e2e1", "primary-fixed": "#ffdad4", "surface": "#131313", "on-primary": "#690100", "on-surface": "#e5e2e1", "outline-variant": "#603e39", "on-error": "#690005", "tertiary-fixed-dim": "#acc7ff", "outline": "#b18780", "text-secondary": "#AAAAAA", "on-primary-fixed-variant": "#930100", "surface-elevated": "#212121", "surface-container-highest": "#353534", "secondary-fixed-dim": "#afc6ff", "inverse-on-surface": "#313030", "on-secondary-container": "#d6e0ff", "surface-container": "#201f1f", "border-subtle": "rgba(255, 255, 255, 0.1)", "surface-container-high": "#2a2a2a", "on-tertiary-container": "#00285b", "primary": "#ffb4a8", "background": "#131313" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-md": "1rem", "margin": "1.5rem", "space-xl": "2rem", "gutter": "1rem", "gutter-mobile": "0.75rem", "space-sm": "0.5rem", "margin-mobile": "1rem", "space-xs": "0.25rem", "space-lg": "1.5rem" }, fontFamily: { "label-md": ["Roboto Flex"], "badge-xs": ["Roboto Flex"], "display-hero": ["Roboto Flex"], "title-sm": ["Roboto Flex"], "body-md": ["Roboto Flex"], "display-hero-mobile": ["Roboto Flex"], "headline-lg": ["Roboto Flex"], "headline-md": ["Roboto Flex"], "label-sm": ["Roboto Flex"], "body-sm": ["Roboto Flex"] }, fontSize: { "label-md": ["14px", { "lineHeight": "18px", "fontWeight": "500" }], "badge-xs": ["11px", { "lineHeight": "14px", "letterSpacing": "0.04em", "fontWeight": "600" }], "display-hero": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.02em", "fontWeight": "700" }], "title-sm": ["16px", { "lineHeight": "22px", "fontWeight": "500" }], "body-md": ["14px", { "lineHeight": "20px", "fontWeight": "400" }], "display-hero-mobile": ["28px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "700" }], "headline-lg": ["24px", { "lineHeight": "32px", "letterSpacing": "-0.015em", "fontWeight": "600" }], "headline-md": ["20px", { "lineHeight": "28px", "letterSpacing": "-0.01em", "fontWeight": "600" }], "label-sm": ["12px", { "lineHeight": "16px", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "16px", "fontWeight": "400" }] } } } };</script><style>@layer base{html,body{width:100%;margin:0;padding:0;}body{overscroll-behavior:none;background-color:#131313;color:#e5e2e1;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/90 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.4)]"><div class="h-14 px-gutter-mobile flex items-center justify-between"><div class="flex items-center gap-space-xs"><img alt="Streamflix Brand Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WV5N8y_JwIBu83-3-nLGDQ6FnBiWnQYplDTRzcx_kInPTe0h8ED2junfhvzJcAgZ9g9Z3fjapXmSVi8-ipMpWMY6bDeuRSCrxyDgy312W80SMw_lKDJfHG5PcQIyjBNRkAdJ6l6OUiUbiXsvaSwXmHBRU4uEfZAiAERKHUxzgZ238fKz0H_V6xQRivjBNgswc21ZZbD1icNLMKjlPOKJsPVcN9Yz2imt7RqNlwZ7JilV14IrdBBFn9F6nh"/><span class="font-headline-md text-headline-md tracking-tight font-bold text-text-primary ml-space-xs">Streamflix</span><span class="sr-only">Home Feed</span></div><div class="flex items-center gap-space-xs"><button aria-label="Cast to device" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">cast</span></button><button aria-label="Notifications" class="relative w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">notifications</span><span class="absolute top-2 right-2 flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-live-badge-red opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-live-badge-red"></span></span></button><button aria-label="Search videos" class="w-11 h-11 flex items-center justify-center text-text-primary rounded-full hover:bg-surface-variant/40 transition-colors"><span class="material-symbols-outlined text-[24px]">search</span></button><button aria-label="User account" class="w-11 h-11 flex items-center justify-center"><img alt="Profile" class="w-8 h-8 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDj8PTnEF6VClpqnVcy3XixTRuMxf9X0oZNhzP1uZjcXuX4ZArzOPBjVWKGOezK6bl25gkNhOm1pJmOaoRaizkLesC_V93oFKr_wT_E4VH_ZTvTfDGZfyhTRI9Id6ut6o7f0XD-sxk6bYYN-TNpnMwk2hURDfcOc4t_nQTUP-qttOy385IIJ_Qgd1qmgdmKhIC29cQFS16THTSrIhzHtVsD5GDpoY4l1_EnNoYEV-uDlyhOuUJBAk_Kjg"/></button></div></div></header><main class="flex-1 w-full pt-14 pb-20 bg-surface flex flex-col"><div class="flex flex-col w-full pb-4">
+<!-- Interactive Pill Filter Bar -->
+<section class="sticky top-0 z-40 bg-surface/95 backdrop-blur-md py-space-sm shadow-sm">
+<div class="flex items-center gap-space-xs overflow-x-auto px-gutter-mobile scrollbar-none" id="chip-container">
+<button class="chip-btn active flex-shrink-0 px-space-md py-1.5 rounded-full bg-text-primary text-surface font-label-md text-label-md transition-all active:scale-95 shadow-sm" data-category="all">
+        All
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="gaming">
+        Gaming
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="music">
+        Music
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="tech">
+        Tech &amp; AI
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="podcasts">
+        Podcasts
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="live">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-live-badge-red mr-1 animate-pulse"></span>Live
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="cinematography">
+        Cinematography
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="news">
+        News
+      </button>
+<button class="chip-btn flex-shrink-0 px-space-md py-1.5 rounded-full bg-surface-container-high text-text-primary font-label-md text-label-md transition-all active:scale-95 hover:bg-surface-variant" data-category="recent">
+        Recently uploaded
+      </button>
+</div>
+</section>
+<!-- Feed Container -->
+<div class="flex flex-col gap-space-lg mt-space-xs">
+<!-- 1. Featured Cinematic Video Card -->
+<article class="flex flex-col w-full group cursor-pointer">
+<div class="relative w-full aspect-video bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-active:scale-[1.02]" data-alt="Cinematic wide-angle shot of a glowing futuristic cyberpunk megalopolis at twilight with rain-slicked asphalt streets reflecting neon cyan and crimson holograms, flying autonomous drones overhead, pristine high-tech cinematic color grading, hyper-detailed volumetric fog, professional 8k movie still" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD2n8FSC418cO5FHo4-DxzRBDGlqKlbuGKT0LBWYxI0V_mAnlNsjHBgFeqQRfTUDcyKoGLaXEfUrXamrnr_YUq0zVgQzURVY9SgiDsAhOtewHho1KkCxqgAdRLx5DukSfkblDBjWDRdKMkfI4unbHJ25TiRC12QJZVeQ98IJBHMA5Rf40S3voTnAi8g72excMtBuSAA_VIJ5dBKQKq3uURIoM9fXb5vS-y_h396ExVcaR8JpOoN2bs9CA"/>
+<!-- Ambient Gradient Vignette -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Badges Bottom-Right -->
+<div class="absolute bottom-2.5 right-2.5 flex items-center gap-1.5">
+<span class="px-1.5 py-0.5 rounded bg-black/85 text-text-primary font-badge-xs text-badge-xs font-semibold backdrop-blur-sm tracking-wider">
+            4K
+          </span>
+<span class="px-1.5 py-0.5 rounded bg-black/85 text-text-primary font-badge-xs text-badge-xs font-medium backdrop-blur-sm">
+            18:42
+          </span>
+</div>
+<!-- Hover/Touch Quick Action Overlay -->
+<div class="absolute top-2.5 right-2.5 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col gap-1.5">
+<button aria-label="Watch Later" class="w-8 h-8 rounded-full bg-surface-container-highest/90 text-text-primary flex items-center justify-center backdrop-blur-sm shadow-md active:scale-90">
+<span class="material-symbols-outlined text-[18px]">schedule</span>
+</button>
+<button aria-label="Add to Queue" class="w-8 h-8 rounded-full bg-surface-container-highest/90 text-text-primary flex items-center justify-center backdrop-blur-sm shadow-md active:scale-90">
+<span class="material-symbols-outlined text-[18px]">playlist_add</span>
+</button>
+</div>
+</div>
+<!-- Channel & Metadata Row -->
+<div class="px-gutter-mobile pt-space-sm flex items-start gap-space-sm">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Futuristic glowing orb crest logo avatar with iridescent geometric holographic shapes on deep black background, ultra crisp graphic design icon" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDlLnS1I8522xkER4A3mLkmFsSsUQ6BbahI8PbNDPsU1A8kIDTprPOEwWQLgfxl_C6SpSRqhDfTgvrotS6stYAndFyHEh6rsqXyopSUdxs1mMq4cG_e90rmIPKQP_8XJicyuBTexOq-awVyF_aOdhXyM2N0wydaxxGNIJMMqzYJVakMz38al6WPBc4hReOq_dOevzsaylUluG9VMx8CxwvXmLAwQywzMfzw6h0ozbciXGsBnX6pOYIEHg"/>
+</div>
+<div class="flex-1 min-w-0 pr-1">
+<h2 class="font-title-sm text-title-sm text-text-primary font-medium line-clamp-2 leading-tight">
+            The Future of AI &amp; Human Creativity in 2025: Full Documentary
+          </h2>
+<div class="flex items-center flex-wrap gap-x-1.5 text-text-secondary font-body-sm text-body-sm mt-1">
+<span class="font-medium text-text-secondary hover:text-text-primary transition-colors flex items-center gap-0.5">
+              TechSphere Media
+              <span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</span>
+<span class="text-text-secondary/50">•</span>
+<span>1.4M views</span>
+<span class="text-text-secondary/50">•</span>
+<span>2 days ago</span>
+</div>
+</div>
+<!-- Context Menu Button -->
+<button aria-label="Video options" class="w-9 h-9 flex items-center justify-center text-text-secondary hover:text-text-primary rounded-full active:bg-surface-variant/40 -mr-1 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</article>
+<!-- 2. Shorts Shelf -->
+<section class="flex flex-col py-space-sm bg-surface-container-low/50">
+<!-- Shorts Header -->
+<div class="px-gutter-mobile flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-2">
+<div class="w-7 h-7 rounded-lg bg-live-badge-red/15 flex items-center justify-center">
+<span class="material-symbols-outlined text-live-badge-red text-[20px]" style="font-variation-settings: 'FILL' 1;">bolt</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md font-bold text-text-primary tracking-tight">Shorts</h3>
+</div>
+</div>
+<button aria-label="Shorts menu" class="w-8 h-8 rounded-full flex items-center justify-center text-text-secondary hover:text-text-primary active:bg-surface-variant">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+<!-- Shorts Carousel -->
+<div class="flex gap-space-sm overflow-x-auto px-gutter-mobile pb-space-xs scrollbar-none snap-x snap-mandatory">
+<!-- Short 1 -->
+<div class="flex-shrink-0 w-[140px] aspect-[9/16] rounded-xl overflow-hidden relative group cursor-pointer snap-start bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-300 group-active:scale-105" data-alt="Extreme close up macro shot of pristine multi-colored futuristic coding interface on a curved dark OLED display screen with luminous vibrant neon text tags glowing softly in purple and mint green" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRfDjAEBVXdZC8YMfPoJuVllesNC3jCZ6Pn_IyUj70MBP42mIECcyKFnjingzzD0hG-FGG_OZUCSjfLltQFqds8MHv0ffBgdDJcW0FPi7dzIvftNLB2JUIQvwNJ9jDM2Fy2qb6wXu1w80kLwPHpKAbfBHVA_xaWXNY3KRlMF6Uey2vhGNxxDEII2Q8S9KOdVeaUfH-_do1sq14idJ7Z4-edKZmWwlGNlT6zpoeUgF5QyxmDk3QtDVRuw"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-white/80 text-[18px] drop-shadow">more_vert</span>
+</div>
+<p class="font-label-sm text-label-sm font-semibold text-text-primary line-clamp-2 leading-snug drop-shadow-sm">
+              Secret CSS Tricks Nobody Tells You
+            </p>
+<span class="font-badge-xs text-badge-xs text-text-secondary mt-1">2.8M views</span>
+</div>
+</div>
+<!-- Short 2 -->
+<div class="flex-shrink-0 w-[140px] aspect-[9/16] rounded-xl overflow-hidden relative group cursor-pointer snap-start bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-300 group-active:scale-105" data-alt="Digital simulation rendering of shattering hyper-detailed crystal glass monolith with glowing neon kinetic light physics in a vast dark void, high production 3D simulation style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALYsG40l4zciPdiZsYR2ezzUQG-UTvKQdB4YXUTL-MW8Q5vYuuCXt2QKLNdO8adkCI21OejVjR2eWPfXYZjssaSsSQrPOZdxjVBABOW3ua1GTUKW75V84NJ8X5ueIBoU7YdtEvMqVVCh12w0NLNG9qRlvNcOJBlzs7X0nwGfwSeokizzVRHKzyyPUFLIxS93wUBnqT9qSwd0XpxA3cSaeyT1rGdEchZ9bL9YPL7vQIywhlSslHZ9CgWA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-white/80 text-[18px] drop-shadow">more_vert</span>
+</div>
+<p class="font-label-sm text-label-sm font-semibold text-text-primary line-clamp-2 leading-snug drop-shadow-sm">
+              Insane Unreal Engine 5.5 Physics!
+            </p>
+<span class="font-badge-xs text-badge-xs text-text-secondary mt-1">940K views</span>
+</div>
+</div>
+<!-- Short 3 -->
+<div class="flex-shrink-0 w-[140px] aspect-[9/16] rounded-xl overflow-hidden relative group cursor-pointer snap-start bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-300 group-active:scale-105" data-alt="Moody cinematic portrait of an energetic young female developer working frantically late at night with multiple warm glowing monitors, desk clutter, espresso cup, natural cinematic atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQLLCUPkyUebG8DT5dJhJFeyJvyuZ3TVMUGZtJY11c8Ogsj-I4XzXugH2QSNLIVGn4ecWGKIRgGOqe1vKcVZy5UyiLPUqGbTGfiQu7eNhpEVKT4r2Rhhqaa_8zOKsb4An5khZuZ_KshvX7SlkFdLZj8DG1cyLd6EhGOB-P50ZUBMfsD6YMZeKb__96AjbjgBazbmx51Tivx_ZU9f6uzTW-TfdlY88Eu0TtKbpgAwWWvstbIdeTOpqidQ"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-white/80 text-[18px] drop-shadow">more_vert</span>
+</div>
+<p class="font-label-sm text-label-sm font-semibold text-text-primary line-clamp-2 leading-snug drop-shadow-sm">
+              Building a Startup in 48 Hours
+            </p>
+<span class="font-badge-xs text-badge-xs text-text-secondary mt-1">1.1M views</span>
+</div>
+</div>
+<!-- Short 4 -->
+<div class="flex-shrink-0 w-[140px] aspect-[9/16] rounded-xl overflow-hidden relative group cursor-pointer snap-start bg-surface-container-high shadow-md">
+<img class="w-full h-full object-cover transition-transform duration-300 group-active:scale-105" data-alt="Hyper-lapse dramatic vertical drone shot looking down directly over Shibuya crossing in Tokyo at midnight illuminated by glowing billboard lights and light trails of cars, atmospheric rain reflection" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJ8Rcvg5nRD-TCePFGftuHy2Og7T6mz30TMZDfRDu5nHI71a5GapA1wEPDnXElMOuhvn4WVhZnpDNBo9raItcrrCQgJCe2huZAKPzDhmihJPr9fSPrWE86Is78YmwlsgoVZJ7sqqiL5QSJYaoEaaupap7cY1xvpmMmefqwDtO174Ud6M2y12bKAvdCtn4iUc28zXDwql-wCggZNNixp6I92sshXZORU_b3asRLtYh18m0S-D3JollNZA"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent flex flex-col justify-end p-2.5">
+<div class="absolute top-2 right-2">
+<span class="material-symbols-outlined text-white/80 text-[18px] drop-shadow">more_vert</span>
+</div>
+<p class="font-label-sm text-label-sm font-semibold text-text-primary line-clamp-2 leading-snug drop-shadow-sm">
+              Epic Drone Shots in Tokyo 4K
+            </p>
+<span class="font-badge-xs text-badge-xs text-text-secondary mt-1">3.4M views</span>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. Second Video Card (Live Stream) -->
+<article class="flex flex-col w-full group cursor-pointer">
+<div class="relative w-full aspect-video bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-active:scale-[1.02]" data-alt="Cozy ambient lo-fi music studio illuminated by neon pink and purple LED tube lights, vintage acoustic guitar resting on stand beside a retro synthesizer, vinyl records on wall, warm analog aesthetic" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcPnghaI_RE41pI9XtN5EUj8aezHI0791x-clOSfbOg5yMlHeTKVqheZxEDvoD7_5-5GKxzsbWKL0j9HHLJwcuPeazRfabxea0auzN89ysN-TVDcp7XPAGvPcKLy3_MVuNg4rrirrPf2Qa4njsEMMmCF1rXm7Z4s_Z_l8XeVQyg_qUW_A9K0p7V0pDZL2M0Fc9OkI7cDjArjuDTAUKB8fb5sr33UwH_IOiM9jCMLLocNnD9A1XO6c7qg"/>
+<!-- Dark scrim -->
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-black/20 pointer-events-none"></div>
+<!-- Live Badging -->
+<div class="absolute bottom-2.5 left-2.5">
+<div class="flex items-center gap-1.5 px-2 py-0.5 rounded bg-live-badge-red text-text-primary font-badge-xs text-badge-xs font-bold tracking-wider uppercase shadow-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-white animate-ping"></span>
+            LIVE
+          </div>
+</div>
+<div class="absolute bottom-2.5 right-2.5">
+<span class="px-1.5 py-0.5 rounded bg-black/85 text-text-primary font-badge-xs text-badge-xs font-medium backdrop-blur-sm">
+            24:15
+          </span>
+</div>
+</div>
+<!-- Channel & Meta -->
+<div class="px-gutter-mobile pt-space-sm flex items-start gap-space-sm">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Stylized animated chill lofi character with headphones listening to music in bedroom illustration, warm neon pastel tones circular profile picture" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQ8q9VtDgsOBjN98WfRosuzo9zLZvUvnFaudjTdkn9uU6fHdxy_TCb6usFsJQAvosA5O28dC3zcyV4BRPvB7BFGiaooaUi2MUOa6pmTtJDmWwcioS2rrC8dngwRWStxDfJBwgJg9guehmqgFQPq8bR14emJ6FPrT6mlCa6Gvxkz68AZchdn__Eh2-_cS8gea9TIm80aGoJMAxIrw4lFl7lRspM9XuEOV0cuaLatpe_MIWtkD1Q93I0wg"/>
+</div>
+<div class="flex-1 min-w-0 pr-1">
+<h2 class="font-title-sm text-title-sm text-text-primary font-medium line-clamp-2 leading-tight">
+            Chill Lo-Fi Beats &amp; Synthwave — Late Night Coding Session [Live 24/7]
+          </h2>
+<div class="flex items-center flex-wrap gap-x-1.5 text-text-secondary font-body-sm text-body-sm mt-1">
+<span class="font-medium text-text-secondary hover:text-text-primary transition-colors flex items-center gap-0.5">
+              Lofi Vibes Radio
+              <span class="material-symbols-outlined text-[15px] text-tertiary" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+</span>
+<span class="text-text-secondary/50">•</span>
+<span class="text-live-badge-red font-medium flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-live-badge-red"></span>
+              12K watching
+            </span>
+</div>
+</div>
+<button aria-label="Video options" class="w-9 h-9 flex items-center justify-center text-text-secondary hover:text-text-primary rounded-full active:bg-surface-variant/40 -mr-1 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</article>
+<!-- 4. Third Video Card (Culinary Artistry) -->
+<article class="flex flex-col w-full group cursor-pointer">
+<div class="relative w-full aspect-video bg-surface-container-low overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-500 group-active:scale-[1.02]" data-alt="Cinematic high shutter speed food photography of a professional Michelin star chef finishing a gourmet glazed duck breast with orange flambé fire burst in a dark moody restaurant kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeSgpSCxLwuzfoS7WA0RdMZEJg2rkQr9hkbdQ-OSNcc_1MMUwgYWInGht0TNWa8_bNkjYUfuDzn4VWDRN2-Q3FBLVfkf0SthWBb8GCYzhEbL0Q1civo0IO9uIQ24VYut2wP_BnnQa1zgjbjfK07aidvRKle2PUle1YGZYqKaEpLf-1GE2dVwI4A-DTjVtnzDFGB4yv-EVLCK69pPhzD5LP_Ln7pEds268PmtogJI4id2N_5DpLqsnSCg"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-lowest/80 via-transparent to-black/20 pointer-events-none"></div>
+<div class="absolute bottom-2.5 right-2.5">
+<span class="px-1.5 py-0.5 rounded bg-black/85 text-text-primary font-badge-xs text-badge-xs font-medium backdrop-blur-sm">
+            12:08
+          </span>
+</div>
+</div>
+<!-- Channel & Meta -->
+<div class="px-gutter-mobile pt-space-sm flex items-start gap-space-sm">
+<div class="relative flex-shrink-0">
+<img class="w-10 h-10 rounded-full object-cover shadow-sm bg-surface-container-high" data-alt="Minimalist luxury gold monogram logo on matte black slate background representing high-end culinary arts and fine dining studio" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAXk6zDiicbFfGwirBuCY4iU8OqfamMTuGm8yUFOZlFDmuoROiKXtabHFnLBLS52ai9D8onrgvnhjvAK8jwCkTturQSg_SVnC30I103IR7eadQl044kIziLBJIZg7rX-Gqy9a_FwIknFKReUYy35F4LXVYQ1Vq7A85ZDgitvxig8DDjeQ_ERabTO1K1Ji7TvCPetqXlocGLeDD2U-SZ-nqRwCdUEyrKz_ng1gl_rWqKKPIvcuYfIesUig"/>
+</div>
+<div class="flex-1 min-w-0 pr-1">
+<h2 class="font-title-sm text-title-sm text-text-primary font-medium line-clamp-2 leading-tight">
+            Mastering the 3-Star Michelin Duck Breast at Home
+          </h2>
+<div class="flex items-center flex-wrap gap-x-1.5 text-text-secondary font-body-sm text-body-sm mt-1">
+<span class="font-medium text-text-secondary hover:text-text-primary transition-colors">
+              Culinary Artistry
+            </span>
+<span class="text-text-secondary/50">•</span>
+<span>890K views</span>
+<span class="text-text-secondary/50">•</span>
+<span>3 weeks ago</span>
+</div>
+</div>
+<button aria-label="Video options" class="w-9 h-9 flex items-center justify-center text-text-secondary hover:text-text-primary rounded-full active:bg-surface-variant/40 -mr-1 flex-shrink-0">
+<span class="material-symbols-outlined text-[20px]">more_vert</span>
+</button>
+</div>
+</article>
+<!-- Interactive Delight: Pull-to-refresh / Continuous Feed End-Indicator -->
+<div class="w-full py-space-md flex flex-col items-center justify-center gap-space-xs text-text-secondary">
+<div class="w-6 h-6 rounded-full border-2 border-surface-variant border-t-primary animate-spin"></div>
+<span class="font-label-sm text-label-sm text-text-secondary">Finding more stories for you...</span>
+</div>
+</div>
+</div>
+<script>
+  // Filter pills state management
+  document.querySelectorAll('#chip-container .chip-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      document.querySelectorAll('#chip-container .chip-btn').forEach(b => {
+        b.classList.remove('bg-text-primary', 'text-surface', 'font-semibold', 'shadow-sm');
+        b.classList.add('bg-surface-container-high', 'text-text-primary');
+      });
+      btn.classList.remove('bg-surface-container-high', 'text-text-primary');
+      btn.classList.add('bg-text-primary', 'text-surface', 'font-semibold', 'shadow-sm');
+    });
+  });
+</script></main><nav class="fixed bottom-0 w-full z-50 pb-safe bg-surface/95 backdrop-blur-2xl shadow-[0_-1px_12px_rgba(0,0,0,0.5)]" data-active-classes="text-text-primary font-bold"><div class="h-14 px-gutter-mobile flex items-center justify-around"><a aria-current="page" class="flex flex-col items-center justify-center min-w-[56px] h-12 transition-colors text-text-primary font-bold" data-path="home-feed" href="#"><span class="material-symbols-outlined text-[24px]">home</span><span class="font-label-sm text-label-sm mt-0.5">Home</span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-text-secondary transition-colors" data-path="shorts" href="#"><span class="material-symbols-outlined text-[24px]">bolt</span><span class="font-label-sm text-label-sm mt-0.5">Shorts</span></a><a aria-label="Create" class="flex items-center justify-center w-12 h-12" data-path="create-studio" href="#"><div class="w-10 h-10 rounded-full bg-surface-elevated flex items-center justify-center text-text-primary shadow-[0_2px_8px_rgba(0,0,0,0.6)] active:scale-95 transition-transform"><span class="material-symbols-outlined text-[28px]">add</span></div></a><a class="relative flex flex-col items-center justify-center min-w-[56px] h-12 text-text-secondary transition-colors" data-path="subscriptions" href="#"><span class="material-symbols-outlined text-[24px]">subscriptions</span><span class="font-label-sm text-label-sm mt-0.5">Subscriptions</span><span class="absolute top-1.5 right-3.5 w-1.5 h-1.5 bg-live-badge-red rounded-full"></span></a><a class="flex flex-col items-center justify-center min-w-[56px] h-12 text-text-secondary transition-colors" data-path="library" href="#"><span class="material-symbols-outlined text-[24px]">video_library</span><span class="font-label-sm text-label-sm mt-0.5">You</span></a></div></nav></body></html>
